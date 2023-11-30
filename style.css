@@ -1,0 +1,12 @@
+body {
+    min-height: 100vh;
+    background-color: grey;;
+    background-image: url("https://unsplash.it/g/1920/1080/");
+
+}
+
+.login-form {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white
+}

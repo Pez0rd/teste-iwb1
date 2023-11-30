@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="login-form w3-container w3-card-4 w3-display-middle">
+
+        <header class="w3-container w3-center">
+            <h2>Login</h2>
+        </header>
+
+        <div class="w3-container">
+            <form action="">
+                <input class="w3-input w3-border w3-round" type="email" name="email" id="email" placeholder="E-mail">
+                <input class="w3-input w3-border w3-round w3-margin-top" type="password" name="senha" id="senha"
+                    placeholder="Senha">
+                <button class="w3-button w3-block w3-blue w3-round w3-margin-top" type="submit">Entrar</button>
+                <button class="w3-button w3-block w3-black w3-round w3-margin-top" type="button"
+                    onclick="document.getElementById('id01').style.display='block'">Cadastrar </button>
+
+            </form>
+        </div>
+        <p class="w3-center">
+            <a href="">Esqueci minha senha</a>
+        </p>
+    </div>
+
+    <!--Modal --->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+
+            <header class="w3-container w3-black">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h2>Cadastro de Usuário</h2>
+            </header>
+
+            <div class="w3-container w3-margin">
+                <form action="">
+                    
+                </form>
+            </div>
+
+            <footer class="w3-container w3-black w3-padding-16">
+            
+                <div class="w3-center">
+                    <div class="w3-bar">
+                        <button class="w3-button w3-blue w3-round">Salvar</button>
+                        <button class="w3-button w3-red" onclick="document.getElementById('id01').style.display='none'">Cancelar</button>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
